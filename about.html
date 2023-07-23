@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,300&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
 <section class="sub-header">
@@ -35,7 +37,7 @@
 </section>
 <!-- ---------------about us content------------------- -->
 <section class="about-us">
-    <div class="row">
+    <div class="row" data-aos="zoom-in">
         <div class="about-col">
             <h1>We are the World's largest University</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, inventore numquam a magnam natus reiciendis neque qui explicabo culpa rem amet animi non asperiores possimus deleniti ipsa fugit mollitia illum totam necessitatibus?</p>
@@ -76,5 +78,12 @@
         navLinks.style.right = "-200px";
     }
 </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+  </script>
 </body>
 </html>

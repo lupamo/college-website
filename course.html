@@ -10,9 +10,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,300&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
-<section class="sub-header">
+<section class="sub-header" data-aos="zoom-in">
     <nav>
         <a href="index.html"><img src="images/logo.png" ></a>
         <div class="nav-links" id="navLinks">
@@ -35,7 +37,7 @@
 </section>
 <!-- ---------------courses------------------- -->
 
-<section class="course">
+<section class="course" data-aos="fade-right">
     <h1>Courses we Offer</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque aut consequuntur.</p>
     <div class="row">
@@ -57,10 +59,10 @@
     </div>
 </section>
 <!-- --------facilities------------ -->
-<section class="faciities">
+<section class="faciities" >
     <h1>Our Faciities</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque aut consequuntur.</p>
-    <div class="row">
+    <div class="row" data-aos="fade-left">
         <div class="faciities-col">
             <img src="images/library.png">
             <h3>World Class Library</h3>
@@ -110,5 +112,12 @@
         navLinks.style.right = "-200px";
     }
 </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+  </script>
 </body>
 </html>
